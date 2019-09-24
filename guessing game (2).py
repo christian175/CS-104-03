@@ -24,19 +24,13 @@ while not GameOver:
     elif x > highRange:
         print ("out of range")
         guessNumber = guessNumber - 1
-        print (highRange, lowRange)
     elif x < lowRange:
         print ("out of range")
-        print (highRange, lowRange)
     elif x > ComputerNumber:
         print ("sorry too high")
         print ("adjusting range")
         highRange = x
-        print(highRange, lowRange)
     elif x < ComputerNumber:
         print ("sorry too low")
         print ("adjusting range")
         lowRange = x
-        print (highRange, lowRange)
-        
-        
